@@ -46,7 +46,7 @@ nav ul li a {
    HEADER & PROFILE STYLES
 */
 header {
-  padding: 40px 20px;
+  padding: 40px 20px 20px 20px;
 }
 
 header .profile {
@@ -71,10 +71,10 @@ header .description {
    MAIN CONTENT STYLES
 */
 main {
-  padding: 40px 20px;
+  padding: 20px 20px;
   max-width: 800px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .content {

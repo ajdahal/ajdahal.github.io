@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fairness Testing</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="content">
+    <h1>Fairness Testing of Machine Learning Models using Combinatorial Testing </h1>
+    
+    <section>
+      <h2>Summary:</h2>
+      <p>Decision-making by Machine Learning (ML) models can exhibit biased behavior, resulting in unfair outcomes.<br>
+        Testing ML models for such biases is essential to ensure unbiased decision-making.<br>
+        In this work, we propose a combinatorial testing-based approach in the latent space of a generative model to generate instances
+        that assess the fairness of black-box ML models.<br>
+        Our approach involves a two-step process: generating t-way test cases in the latent space of a Variational AutoEncoder and
+        performing fairness testing using the instances reconstructed from these test cases.</p>
+    </section>
+    
+    
+    <section>
+      <h2>Relevant Papers:</h2>
+      <ol>
+        <li>
+          Chen, Zhenpeng, et al. "Fairness testing: A comprehensive survey and analysis of trends." <em>ACM Transactions on Software Engineering and Methodology</em> 33.5 (2024): 1-59.
+        </li>
+        <li>
+          Xiao, Yisong, et al. "Latent imitator: Generating natural individual discriminatory instances for black-box fairness testing." <em>Proceedings of the 32nd ACM SIGSOFT International Symposium on Software Testing and Analysis</em>. 2023.
+        </li>
+        <li>
+          Aggarwal, Aniya, et al. "Black box fairness testing of machine learning models." <em>Proceedings of the 2019 27th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering</em>. 2019.
+        </li>
+        <li>
+          Wang, Zhaohui, et al. "MAFT: Efficient Model-Agnostic Fairness Testing for Deep Neural Networks via Zero-Order Gradient Search." <em>Proceedings of the IEEE/ACM 46th International Conference on Software Engineering</em>. 2024.
+        </li>
+        <li>
+          Khadka, Krishna, et al. "Synthetic data generation using combinatorial testing and variational autoencoder." 
+          <em>2023 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW)</em>. IEEE, 2023.
+        </li>
+        <li>
+          Patel, Ankita Ramjibhai, et al. "A combinatorial approach to fairness testing of machine learning models." 
+          <em>2022 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW)</em>. IEEE, 2022.
+        </li>
+        <li>
+          Kacker, Raghu N., et al. "Factorials experiments, covering arrays, and combinatorial testing." 
+          <em>Mathematics in Computer Science</em> 15 (2021): 715-739.
+        </li>
+        <li>
+          Lei, Yu, et al. "IPOG: A general strategy for t-way software testing." 
+          <em>14th Annual IEEE International Conference and Workshops on the Engineering of Computer-Based Systems (ECBS'07)</em>. IEEE, 2007.
+        </li>
+        <li>
+          Bellamy, Rachel KE, et al. "AI Fairness 360: An extensible toolkit for detecting and mitigating algorithmic bias." 
+          <em>IBM Journal of Research and Development</em> 63.4/5 (2019): 4-1.
+        </li>
+        <li>
+          Mothilal, Ramaravind K., Amit Sharma, and Chenhao Tan. "Explaining machine learning classifiers through diverse counterfactual explanations." 
+          <em>Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency</em>. 2020.
+        </li>
+        <li>
+          Udeshi, Sakshi, Pryanshu Arora, and Sudipta Chattopadhyay. "Automated directed fairness testing." 
+          <em>Proceedings of the 33rd ACM/IEEE International Conference on Automated Software Engineering</em>. 2018.
+        </li>
+        <li>
+          Kingma, Diederik P., and Max Welling. "An introduction to variational autoencoders." 
+          <em>Foundations and Trends® in Machine Learning</em> 12.4 (2019): 307-392.
+        </li>
+        <li>
+          Fayyad, Usama M., and Keki B. Irani. "Multi-interval discretization of continuous-valued attributes for classification learning." 
+          <em>IJCAI</em>. Vol. 93. No. 2. 1993.
+        </li>
+        <li>
+          Ribeiro, Marco Tulio, Sameer Singh, and Carlos Guestrin. "Model-agnostic interpretability of machine learning." 
+          <em>arXiv preprint arXiv:1606.05386</em> (2016).
+        </li>
+        <li>
+          Jiang, Weipeng, et al. "Black-Box Fairness Testing with Shadow Models." 
+          <em>International Conference on Information and Communications Security</em>. Singapore: Springer Nature Singapore, 2023.
+        </li>
+        <li>
+          Fan, Ming, et al. "Explanation-guided fairness testing through genetic algorithm." 
+          <em>Proceedings of the 44th International Conference on Software Engineering</em>. 2022.
+        </li>
+        <li>
+          Zheng, Haibin, et al. "Neuronfair: Interpretable white-box fairness testing through biased neuron identification." 
+          <em>Proceedings of the 44th International Conference on Software Engineering</em>. 2022.
+        </li>
+        <li>
+          Galhotra, Sainyam, Yuriy Brun, and Alexandra Meliou. "Fairness testing: Testing software for discrimination." 
+          <em>Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering</em>. 2017.
+        </li>
+        <li>
+          Perez Morales, Daniel, Takashi Kitamura, and Shingo Takada. "Coverage-guided fairness testing." 
+          <em>International Conference on Intelligence Science</em>. Cham: Springer International Publishing, 2021.
+        </li>
+        <li>
+          Kitamura, Takashi, Zhenjiang Zhao, and Takahisa Toda. "Applying combinatorial testing to verification-based fairness testing." 
+          <em>International Symposium on Search Based Software Engineering</em>. Cham: Springer International Publishing, 2022.
+        </li>
+        <li>
+          Yin, Ziqiang, Wentian Zhao, and Tian Song. "Boundary-Guided Black-Box Fairness Testing." 
+          <em>2024 IEEE 48th Annual Computers, Software, and Applications Conference (COMPSAC)</em>. IEEE, 2024.
+        </li>
+        <li>
+          Tao, Guanhong, et al. "RULER: Discriminative and iterative adversarial training for deep neural network fairness." 
+          <em>Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering</em>. 2022.
+        </li>
+        <li>
+          Shahani, Aarti. "Now algorithms are deciding whom to hire, based on voice." 
+          <em>NPR All Things Considered</em> (2015).
+        </li>
+        <li>
+          Mickisch, David, et al. "Understanding the decision boundary of deep neural networks: An empirical study." 
+          <em>arXiv preprint arXiv:2002.01810</em> (2020).
+        </li>
+        <li>
+          Flores, Anthony W., Kristin Bechtel, and Christopher T. Lowenkamp. "False positives, false negatives, and false analyses: A rejoinder to machine bias: There's software used across the country to predict future criminals. And it's biased against blacks." 
+          <em>Federal Probation</em> 80 (2016): 38.
+        </li>
+        <li>
+          John, Philips George, Deepak Vijaykeerthy, and Diptikalyan Saha. "Verifying individual fairness in machine learning models." <em>Conference on Uncertainty in Artificial Intelligence</em>. PMLR, 2020.
+        </li>
+        <li>
+          Cabrera, Ángel Alexander, et al. "FairVis: Visual analytics for discovering intersectional bias in machine learning." <em>2019 IEEE Conference on Visual Analytics Science and Technology (VAST)</em>. IEEE, 2019.
+        </li>
+        <li>
+          Monjezi, Verya, et al. "Information-theoretic testing and debugging of fairness defects in deep neural networks." <em>2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)</em>. IEEE, 2023.
+        </li>
+        <li>
+          Zhang, Peixin, et al. "White-box fairness testing through adversarial sampling." <em>Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering</em>. 2020.
+        </li>
+        <li>
+          Liu, Zeyuan, Xin Zhang, and Benben Jiang. "Active learning with fairness-aware clustering for fair classification considering multiple sensitive attributes." <em>Information Sciences</em> 647 (2023): 119521.
+        </li>
+        <li>
+          Haffar, Rami, et al. "Measuring fairness in machine learning models via counterfactual examples." <em>International Conference on Modeling Decisions for Artificial Intelligence</em>. Cham: Springer International Publishing, 2022.
+        </li>
+        <li>
+          Dash, Saloni, Vineeth N. Balasubramanian, and Amit Sharma. "Evaluating and mitigating bias in image classifiers: A causal perspective using counterfactuals." <em>Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision</em>. 2022.
+        </li>
+        <li>
+          Vassøy, Bjørnar, Helge Langseth, and Benjamin Kille. "Providing previously unseen users fair recommendations using variational autoencoders." <em>Proceedings of the 17th ACM Conference on Recommender Systems</em>. 2023.
+        </li>
+        <li>
+          Louizos, Christos, et al. "The variational fair autoencoder." <em>arXiv preprint arXiv:1511.00830</em> (2015).
+        </li>
+        <li>
+          Panagiotou, Emmanouil, Arjun Roy, and Eirini Ntoutsi. "Synthetic tabular data generation for class imbalance and fairness: A comparative study." <em>arXiv preprint arXiv:2409.05215</em> (2024).
+        </li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

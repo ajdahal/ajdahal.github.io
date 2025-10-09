@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Natural Changes in Tabular Data </title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="content">
+    <h1> Making Natural Changes in Tabular Data </h1>
+
+    <section>
+      <h2>Summary:</h2>
+      <p>Modifying an attribute in tabular data often creates unnatural instances by breaking the relationship with
+        other attributes. This is an important problem in applications like fairness testing, where the counterfactual
+        must be both natural and minimally changed from the original instance.<br>
+        In this work, we address the challenge of
+        generating such counterfactuals.<br>
+        Our approach analyzes the relationship between the attribute of interest and other attributes in the dataset. If
+        the relation is weak, it simply flips the attribute; if it is strong, it uses an adversarial framework to learn a
+        latent representation that removes information about the attribute. This removal enables precise modifications,
+        making only the necessary adjustments to maintain naturalness.</p>
+    </section>
+    
+
+    <section>
+      <h2>Relevant Papers:</h2>
+      <ol>
+        <li>
+          Becker, Barry, and Ronny Kohavi. "Adult." <em>UCI Machine Learning Repository</em>. 1996.
+          DOI: https://doi.org/10.24432/C5XW20.
+        </li>
+        <li>
+          Bellamy, Rachel K. E., et al. "AI Fairness 360: An extensible toolkit for detecting and mitigating algorithmic bias."
+          <em>IBM Journal of Research and Development</em> 63.4/5 (2019): 4–1.
+        </li>
+        <li>
+          Chan, Jason, and Jing Wang. "Hiring preferences in online labor markets: Evidence of a female hiring bias."
+          <em>Management Science</em> 64.7 (2018): 2973–2994.
+        </li>
+        <li>
+          Cinquini, Martina, and Riccardo Guidotti. "Causality-aware local interpretable model-agnostic explanations."
+          <em>World Conference on Explainable Artificial Intelligence</em>. 2024: 108–124.
+        </li>
+        <li>
+          Downs, Michael, Jonathan L. Chu, Yaniv Yacoby, Finale Doshi-Velez, and Weiwei Pan.
+          "Cruds: Counterfactual recourse using disentangled subspaces."
+          <em>ICML WHI 2020</em> (2020): 1–23.
+        </li>
+        <li>
+          Fan, Ming, Wenying Wei, Wuxia Jin, Zijiang Yang, and Ting Liu.
+          "Explanation-guided fairness testing through genetic algorithm."
+          <em>Proceedings of the 44th International Conference on Software Engineering</em>. 2022: 871–882.
+        </li>
+        <li>
+          Garg, Prateek, Lokesh Nagalapatti, and Sunita Sarawagi.
+          "From Search To Sampling: Generative Models For Robust Algorithmic Recourse."
+          <em>arXiv preprint arXiv:2505.07351</em> (2025).
+        </li>
+        <li>
+          Han, Jiawei, Jian Pei, and Yiwen Yin.
+          "Mining frequent patterns without candidate generation."
+          <em>ACM SIGMOD Record</em> 29.2 (2000): 1–12.
+        </li>
+        <li>
+          Hofmann, Hans. "Statlog (German Credit Data)." <em>UCI Machine Learning Repository</em>. 1994.
+          DOI: https://doi.org/10.24432/C5NC77.
+        </li>
+        <li>
+          Joshi, Shalmali, Oluwasanmi Koyejo, Warut Vijitbenjaronk, Been Kim, and Joydeep Ghosh.
+          "Towards realistic individual recourse and actionable explanations in black-box decision making systems."
+          <em>arXiv preprint arXiv:1907.09615</em> (2019).
+        </li>
+        <li>
+          Kim, Hyemi, Seungjae Shin, JoonHo Jang, Kyungwoo Song, Weonyoung Joo, Wanmo Kang, and Il-Chul Moon.
+          "Counterfactual fairness with disentangled causal effect variational autoencoder."
+          <em>Proceedings of the AAAI Conference on Artificial Intelligence</em> 35 (2021): 8128–8136.
+        </li>
+        <li>
+          Madaan, Nishtha, and Srikanta Bedathur.
+          "Navigating the Structured What-If Spaces: Counterfactual Generation via Structured Diffusion."
+          <em>2024 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)</em>. 2024: 710–722.
+        </li>
+        <li>
+          Majumdar, Ayan. "On Computing Counterfactuals for Causal Fairness."
+          <em>Master’s Thesis, Saarland University</em>. 2021.
+        </li>
+        <li>
+          Moro, Rita P., S., and P. Cortez. "Bank Marketing." <em>UCI Machine Learning Repository</em>. 2014.
+          DOI: https://doi.org/10.24432/C5K306.
+        </li>
+        <li>
+          Mothilal, Ramaravind K., Amit Sharma, and Chenhao Tan.
+          "Explaining machine learning classifiers through diverse counterfactual explanations."
+          <em>Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency</em>. 2020: 607–617.
+        </li>
+        <li>
+          Mukerjee, Amitabha, Rita Biswas, Kalyanmoy Deb, and Amrit P. Mathur.
+          "Multi–objective evolutionary algorithms for the risk–return trade–off in bank loan management."
+          <em>International Transactions in Operational Research</em> 9.5 (2002): 583–597.
+        </li>
+        <li>
+          Nemirovsky, Daniel, Nicolas Thiebaut, Ye Xu, and Abhishek Gupta.
+          "CounterGAN: Generating realistic counterfactuals with residual generative adversarial nets."
+          <em>arXiv preprint arXiv:2009.05199</em> (2020).
+        </li>
+        <li>
+          Panagiotou, Emmanouil, Manuel Heurich, Tim Landgraf, and Eirini Ntoutsi.
+          "TabCF: Counterfactual explanations for tabular data using a transformer-based VAE."
+          <em>Proceedings of the 5th ACM International Conference on AI in Finance</em>. 2024: 274–282.
+        </li>
+        <li>
+          Patki, Neha, Roy Wedge, and Kalyan Veeramachaneni.
+          "The synthetic data vault."
+          <em>2016 IEEE International Conference on Data Science and Advanced Analytics (DSAA)</em>. IEEE, 2016: 399–410.
+        </li>
+        <li>
+          Pawelczyk, Martin, Klaus Broelemann, and Gjergji Kasneci.
+          "Learning model-agnostic counterfactual explanations for tabular data."
+          <em>Proceedings of the Web Conference 2020</em>. 2020: 3126–3132.
+        </li>
+        <li>
+          Perarnau, Guim, Joost Van De Weijer, Bogdan Raducanu, and Jose M. Álvarez.
+          "Invertible conditional GANs for image editing."
+          <em>arXiv preprint arXiv:1611.06355</em> (2016).
+        </li>
+        <li>
+          Pfisterer, Florian. "national-longitudinal-survey-binary (OpenML dataset 43892), version 1."
+          <em>OpenML</em>. 2022. https://www.openml.org/d/43892.
+          Binarized extract from the U.S. Bureau of Labor Statistics National Longitudinal Surveys. Accessed: 2025-09-02.
+        </li>
+        <li>
+          Poyiadzi, Rafael, Kacper Sokol, Raul Santos-Rodriguez, Tijl De Bie, and Peter Flach.
+          "FACE: feasible and actionable counterfactual explanations."
+          <em>Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society</em>. 2020: 344–350.
+        </li>
+        <li>
+          ProPublica. "propublica/compas-analysis: Data and analysis for ‘Machine Bias’."
+          <em>GitHub repository</em>. 2016. https://github.com/propublica/compas-analysis. Accessed: 2025-06-12.
+        </li>
+        <li>
+          Qian, Zhaozhi, Bogdan-Constantin Cebere, and Mihaela van der Schaar.
+          "SynthCity: facilitating innovative use cases of synthetic data in different data modalities."
+          <em>arXiv preprint arXiv:2301.07573</em> (2023). doi:10.48550/arXiv.2301.07573.
+        </li>
+        <li>
+          Rajabi, Amirarsalan, and Ozlem Ozmen Garibay.
+          "TabFairGAN: Fair tabular data generation with generative adversarial networks."
+          <em>Machine Learning and Knowledge Extraction</em> 4.2 (2022): 488–501.
+        </li>
+        <li>
+          Saleiro, Pedro, Benedict Kuester, Loren Hinkson, Jesse London, Abby Stevens, Ari Anisfeld, Kit T. Rodolfa, and Rayid Ghani.
+          "Aequitas: A bias and fairness audit toolkit."
+          <em>arXiv preprint arXiv:1811.05577</em> (2018).
+        </li>
+        <li>
+          Sohn, Kihyuk, Honglak Lee, and Xinchen Yan.
+          "Learning structured output representation using deep conditional generative models."
+          <em>Advances in Neural Information Processing Systems</em> 28 (2015).
+        </li>
+        <li>
+          TabChange. "TabChange." <em>Code repository</em>: https://anonymous.4open.science/r/TabChange-AB63. 2025. Accessed: 2025-09-09.
+        </li>
+        <li>
+          U.S. Census Bureau. "American Community Survey (ACS) 1-Year Estimates, 2018: S2704 — Public Health Insurance Coverage by Type and Selected Characteristics (Alabama)."
+          <em>data.census.gov</em>. 2018. https://data.census.gov/table/ACSST1Y2018.S2704.
+          Subject Table S2704. Geography: Alabama (state). Accessed: 2025-09-02.
+        </li>
+        <li>
+          Ustun, Berk, Alexander Spangher, and Yang Liu.
+          "Actionable recourse in linear classification."
+          <em>Proceedings of the Conference on Fairness, Accountability, and Transparency</em>. 2019: 10–19.
+        </li>
+        <li>
+          Van Breugel, Boris, Trent Kyono, Jeroen Berrevoets, and Mihaela van der Schaar.
+          "DECAF: Generating fair synthetic data using causally-aware generative networks."
+          <em>Advances in Neural Information Processing Systems</em> 34 (2021): 22221–22233.
+        </li>
+        <li>
+          Xiao, Yisong, Aishan Liu, Tianlin Li, and Xianglong Liu.
+          "Latent imitator: Generating natural individual discriminatory instances for black-box fairness testing."
+          <em>Proceedings of the 32nd ACM SIGSOFT International Symposium on Software Testing and Analysis</em>. 2023: 829–841.
+        </li>
+        <li>
+          Xu, Depeng, Shuhan Yuan, Lu Zhang, and Xintao Wu.
+          "FairGAN+: Achieving fair data generation and classification through generative adversarial nets."
+          <em>2019 IEEE International Conference on Big Data (Big Data)</em>. IEEE, 2019: 1401–1406.
+        </li>
+        <li>
+          Xu, Lei, Maria Skoularidou, Alfredo Cuesta-Infante, and Kalyan Veeramachaneni.
+          "Modeling tabular data using conditional GAN."
+          <em>Advances in Neural Information Processing Systems</em> 32 (2019).
+        </li>
+        <li>
+          Yang, Zeyu, Han Yu, Peikun Guo, Khadija Zanna, Xiaoxue Yang, and Akane Sano.
+          "Balanced mixed-type tabular data synthesis with diffusion models."
+          <em>arXiv preprint arXiv:2404.08254</em> (2024).
+        </li>
+        <li>
+          Yin, Ziqiang, Wentian Zhao, and Tian Song.
+          "Boundary-guided black-box fairness testing."
+          <em>2024 IEEE 48th Annual Computers, Software, and Applications Conference (COMPSAC)</em>. IEEE, 2024: 1230–1239.
+        </li>
+        <li>
+          Zhang, Lingfeng, Yueling Zhang, and Min Zhang.
+          "Efficient white-box fairness testing through gradient search."
+          <em>Proceedings of the 30th ACM SIGSOFT International Symposium on Software Testing and Analysis</em>. 2021: 103–114.
+        </li>
+        <li>
+          Zhang, Peixin, Jingyi Wang, Jun Sun, Xinyu Wang, Guoliang Dong, Xingen Wang, Ting Dai, and Jin Song Dong.
+          "Automatic fairness testing of neural classifiers through adversarial sampling."
+          <em>IEEE Transactions on Software Engineering</em> 48.9 (2021): 3593–3612.
+        </li>
+        <li>
+          Zheng, Haibin, Zhiqing Chen, Tianyu Du, Xuhong Zhang, Yao Cheng, Shouling Ji, Jingyi Wang, Yue Yu, and Jinyin Chen.
+          "NeuronFair: Interpretable white-box fairness testing through biased neuron identification."
+          <em>Proceedings of the 44th International Conference on Software Engineering</em>. 2022: 1519–1531.
+        </li>
+      </ol>
+    </section>
+  </main>
+</body>

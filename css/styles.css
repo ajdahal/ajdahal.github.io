@@ -46,7 +46,7 @@ nav ul li a {
    HEADER & PROFILE STYLES
 */
 header {
-  padding: 40px 20px 20px 20px;
+  padding: 40px 20px 10px 20px;
 }
 
 header .profile {
@@ -71,7 +71,7 @@ header .description {
    MAIN CONTENT STYLES
 */
 main {
-  padding: 20px 20px;
+  padding: 10px 20px;
   max-width: 800px;
   margin: 0 auto;
   margin-bottom: 24px;
@@ -119,8 +119,8 @@ main {
 }
 
 .contact img {
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   vertical-align: middle;
 }
 

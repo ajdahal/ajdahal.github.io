@@ -113,8 +113,8 @@ main {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 32px;
+  margin-bottom: 32px;
   z-index: 10;
 }
 

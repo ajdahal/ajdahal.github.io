@@ -3,70 +3,202 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arjun Dahal </title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Arjun Dahal is a PhD candidate in Computer Science and Engineering at the University of Texas at Arlington.">
+  <title>Arjun Dahal</title>
+  <script>
+    document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+  </script>
+  <link rel="stylesheet" href="css/styles.css?v=20260527-theme2">
 </head>
 <body>
-    <nav>
-        <a href="index.html" class="nav-title">Arjun Dahal</a>
-        <ul>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="cv.html">CV</a></li>
-        </ul>
-      </nav>
-      
-  <header>
-    <div class="profile">
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="index.html" class="nav-title">Arjun Dahal</a>
+    <ul>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="cv.html">CV</a></li>
+    </ul>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+      <span class="theme-toggle-icon" aria-hidden="true">D</span>
+      <span class="theme-toggle-text">Dark</span>
+    </button>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-copy">
+      <h1>About me</h1>
+      <p class="hero-text">
+        I am a PhD candidate in Computer Science and Engineering at the University of Texas at Arlington, where I conduct research under the supervision of <a href="https://www.uta.edu/academics/faculty/profile?username=ylei" target="_blank" rel="noopener noreferrer">Dr. Jeff Lei</a>.
+      </p>
+      <p class="hero-text">
+        My research broadly focuses on <strong>explainable AI</strong>, with an emphasis on <strong>fairness testing</strong>, <strong>bias mitigation</strong>, and <strong>synthetic data generation</strong>. My recent work has explored natural counterfactual data generation and methods for testing black-box machine learning systems.
+      </p>
+      <p class="hero-text">
+        I am interested in advancing the <strong>trustworthiness</strong> and <strong>responsible deployment</strong> of AI systems by making them more fair, reliable, and interpretable.
+      </p>
+      <div class="hero-actions" aria-label="Profile links">
+        <a class="button primary" href="publications.html">View publications</a>
+        <a class="button" href="blogs.html">Read blogs</a>
+        <a class="button" href="files/resume_arjun.pdf">Download CV</a>
+      </div>
+    </div>
+    <div class="profile-card">
       <img src="img/profile.jpg" alt="Arjun Dahal">
-      <div class="description">
-        <h2>About Me</h2>
-        <p>
-          I am a fourth-year Ph.D. student in Computer Science and Engineering at the University of Texas at Arlington.
-        </p>
-        <p><strong>Research Interests:</strong> Synthetic Data Generation, Fairness Testing, XAI </p>
+      <div>
+        <h2>Arjun Dahal</h2>
+        <p>University of Texas at Arlington</p>
+        <p class="muted">Synthetic Data Generation · Fairness Testing · XAI</p>
       </div>
     </div>
   </header>
 
   <main>
-    <h2>News</h2>
-    <div class="news-scroll">
-        Mar 2025: Our Paper titled <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10962484" target="_blank"  rel="noopener noreferrer"> "Fairness Testing of Machine Learning Models Using Combinatorial Testing in Latent Space" </a> has been accepted at IWCT 2025.
-    </div>
-    <div class="news-scroll">
-        Nov 2024: Passed my Comprehensive Examination.
-    </div>
-    <div class="news-scroll">
-        May 2024: Completed my Diagnostic Evaluation.
-    </div>
-    <div class="news-scroll">
-        Aug 2022: Started Ph.D. in <a href="https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse" target="_blank"  rel="noopener noreferrer"> Computer Science  </a> at the <a href="https://www.uta.edu/" target="_blank"  rel="noopener noreferrer"> University of Texas at Arlington </a>.
-    </div>
-    <div class="news-scroll">
-        Dec 2018: Joined <a href="https://logpoint.com/en" target="_blank"  rel="noopener noreferrer"> Logpoint </a> as an Associate Solutions Engineer.
-    </div>
-    <div class="news-scroll">
-        Sep 2018: Completed undergraduate degree in Electronics and Communication Engineering at
-      <a href="https://doece.pcampus.edu.np/" target="_blank"  rel="noopener noreferrer" > Pulchowk Campus, IOE  </a>, Nepal.
-    </div>
-    <div class="contact">
-      <a href="mailto:axd5000@mavs.uta.edu">
-        <img src="img/email.svg" alt="Email">
+    <section class="section">
+      <div class="section-heading">
+        <h2 class="section-title-large">Research</h2>
+        <p class="eyebrow">Current Projects</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <p class="project-date">2026 - Ongoing</p>
+          <h3>Bias Mitigation in LLMs</h3>
+          <p>
+            Studying mechanistic interpretability methods for identifying and reducing biased behavior in large language models.
+          </p>
+        </article>
+        <article class="card">
+          <p class="project-date">2026 - Ongoing</p>
+          <h3>Bias Mitigation in Neural Networks</h3>
+          <p>
+            Diagnosing whether bias in a neural network is caused by shallow decision behavior or is embedded deeper in the learned representation, then exploring minimal interventions to reduce that bias.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Past Projects</p>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3><a href="natural_changes.html">TabChange: Precise Attribute Changes in Tabular Data</a></h3>
+          <p>
+            Creating realistic counterfactuals for tabular data on sensitive attributes while preserving relationships among attributes.
+          </p>
+        </article>
+        <article class="card">
+          <h3><a href="fairness_testing.html">Fairness Testing of Machine Learning Models using Combinatorial Testing in Latent Space</a></h3>
+          <p>
+            Generating test instances in the latent space of generative models to uncover discriminatory behavior in black-box machine learning systems.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Profile</p>
+        <h2>Education</h2>
+      </div>
+      <div class="resume-grid">
+        <article class="resume-item">
+          <h3>Ph.D. in Computer Science and Engineering</h3>
+          <p><strong>University of Texas at Arlington</strong> · August 2022 - Present</p>
+          <p>GPA: 4.0 / 4.0</p>
+          <p>Graduate Teaching Assistant for Intermediate Programming, Fundamentals of Software Engineering, Software Testing, and Professional Practices.</p>
+          <p>Delivered lectures, supported course instruction, and helped students with programming, testing, and software engineering concepts.</p>
+        </article>
+        <article class="resume-item">
+          <h3>B.E. in Electronics and Communication Engineering</h3>
+          <p>Pulchowk Campus, IOE, Nepal · Completed September 2018</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Professional Experience</h2>
+      </div>
+      <div class="resume-grid single-column">
+        <article class="resume-item">
+          <h3>Solutions Engineer</h3>
+          <p><strong>Logpoint</strong> · December 2018 - August 2022</p>
+          <p>Worked on security analytics and customer-facing technical solutions, combining troubleshooting, system integration, and product support for enterprise environments.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Writing</p>
+        <h2>Blogs</h2>
+      </div>
+      <article class="publication-card">
+        <h3>Research notes and technical writing</h3>
+        <p>
+          I will use this space for short notes on fairness testing, synthetic data generation, explainable AI, software testing, and Ph.D. research practice.
+        </p>
+        <div class="link-row">
+          <a href="blogs.html">Open blog</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Updates</p>
+        <h2>News</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <time>Mar 2025</time>
+          <p>Our paper, <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10962484" target="_blank" rel="noopener noreferrer">"Fairness Testing of Machine Learning Models Using Combinatorial Testing in Latent Space"</a>, was accepted at IWCT 2025.</p>
+        </div>
+        <div class="timeline-item">
+          <time>Nov 2024</time>
+          <p>Passed my comprehensive examination.</p>
+        </div>
+        <div class="timeline-item">
+          <time>May 2024</time>
+          <p>Completed my diagnostic evaluation.</p>
+        </div>
+        <div class="timeline-item">
+          <time>Aug 2022</time>
+          <p>Started my Ph.D. in <a href="https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse" target="_blank" rel="noopener noreferrer">Computer Science</a> at the <a href="https://www.uta.edu/" target="_blank" rel="noopener noreferrer">University of Texas at Arlington</a>.</p>
+        </div>
+        <div class="timeline-item">
+          <time>Dec 2018</time>
+          <p>Joined <a href="https://logpoint.com/en" target="_blank" rel="noopener noreferrer">Logpoint</a> as a Solutions Engineer.</p>
+        </div>
+        <div class="timeline-item">
+          <time>Sep 2018</time>
+          <p>Completed my undergraduate degree in Electronics and Communication Engineering at <a href="https://doece.pcampus.edu.np/" target="_blank" rel="noopener noreferrer">Pulchowk Campus, IOE</a>, Nepal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-label="Contact links">
+      <a href="mailto:axd5000@mavs.uta.edu" aria-label="Email">
+        <img src="img/email.svg" alt="">
+        <span>Email</span>
       </a>
-    
-      <a href="https://www.linkedin.com/in/arjdahal/">
-        <img src="img/linkedin.svg" alt="LinkedIn">
+      <a href="https://www.linkedin.com/in/arjdahal/" aria-label="LinkedIn">
+        <img src="img/linkedin.svg" alt="">
+        <span>LinkedIn</span>
       </a>
-    
-      <a href="https://github.com/ajdahal">
-        <img src="img/github.svg" alt="GitHub">
+      <a href="https://github.com/ajdahal" aria-label="GitHub">
+        <img src="img/github.svg" alt="">
+        <span>GitHub</span>
       </a>
-    
-      <a href="https://scholar.google.com/citations?hl=en&user=fI9pyVIAAAAJ">
-        <img src="img/googlescholar.svg" alt="Google Scholar">
+      <a href="https://scholar.google.com/citations?hl=en&user=fI9pyVIAAAAJ" aria-label="Google Scholar">
+        <img src="img/googlescholar.svg" alt="">
+        <span>Scholar</span>
       </a>
-    </div>
+    </section>
   </main>
+  <script src="js/script.js?v=20260527-theme2"></script>
 </body>
 </html>

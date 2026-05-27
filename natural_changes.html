@@ -4,9 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Natural Changes in Tabular Data </title>
-  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+  </script>
+  <link rel="stylesheet" href="css/styles.css?v=20260527-theme2">
 </head>
 <body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="index.html" class="nav-title">Arjun Dahal</a>
+    <ul>
+      <li><a href="research.html" aria-current="page">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="cv.html">CV</a></li>
+    </ul>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+      <span class="theme-toggle-icon" aria-hidden="true">D</span>
+      <span class="theme-toggle-text">Dark</span>
+    </button>
+  </nav>
+
   <main class="content">
     <h1> Making Natural Changes in Tabular Data </h1>
 
@@ -220,4 +237,6 @@
       </ol>
     </section>
   </main>
+  <script src="js/script.js?v=20260527-theme2"></script>
 </body>
+</html>

@@ -1,0 +1,5 @@
+title: Arjun Dahal
+description: PhD candidate in Computer Science and Engineering at the University of Texas at Arlington.
+url: "https://ajdahal.github.io"
+permalink: /blogs/:year/:month/:day/:title/
+markdown: kramdown

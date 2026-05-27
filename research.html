@@ -3,19 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Research interests and projects by Arjun Dahal.">
+  <meta name="description" content="Research interests, projects, and publications by Arjun Dahal.">
   <title>Research | Arjun Dahal</title>
   <script>
     document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
   </script>
-  <link rel="stylesheet" href="css/styles.css?v=20260527-theme2">
+  <link rel="stylesheet" href="css/styles.css?v=20260527-research1">
 </head>
 <body>
   <nav class="site-nav" aria-label="Primary navigation">
     <a href="index.html" class="nav-title">Arjun Dahal</a>
     <ul>
       <li><a href="research.html" aria-current="page">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
       <li><a href="blogs.html">Blogs</a></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
@@ -27,28 +26,91 @@
 
   <main class="content">
     <section class="page-intro">
-      <p class="eyebrow">Research</p>
-      <h1>Machine learning testing, fairness, and realistic data generation.</h1>
-      <p>
-        My work studies how to test and analyze machine learning systems when data changes in realistic ways. I am especially interested in fairness testing, synthetic tabular data generation, and explainable AI methods that support more reliable model evaluation.
-      </p>
+      <h1>Research</h1>
     </section>
 
-    <section class="card-grid">
-      <article class="card">
-        <h2>Fairness Testing</h2>
+    <section class="section">
+      <div class="section-heading">
+        <h2>Current Projects</h2>
+      </div>
+      <div class="section-note">
         <p>
-          I study how combinatorial testing and latent-space representations can generate diverse test instances for identifying fairness issues in black-box machine learning models.
+          My current focus is on diagnosis i.e. finding which components are resposible for the bias, followed by repair i.e. how to best intervene on the model to reduce bias with minimal impact on overall performance.
         </p>
-        <a href="fairness_testing.html">Project notes</a>
-      </article>
-      <article class="card">
-        <h2>Natural Changes in Tabular Data</h2>
+      </div>
+      <div class="project-list">
+        <article class="project-card">
+          <p class="project-date">2026 - Ongoing</p>
+          <h3>Bias Mitigation in LLMs</h3>
+          <p>
+            Using mechanistic interpretability techniques for identifying and reducing biased behavior in large language models.
+          </p>
+        </article>
+
+        <article class="project-card">
+          <p class="project-date">2026 - Ongoing</p>
+          <h3>Bias Mitigation in Neural Networks</h3>
+          <p>
+            Diagnosing whether bias in a neural network is spurious or embedded in the learned representation, then making minimal interventions to reduce the bias.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Past Projects</h2>
+      </div>
+      <div class="section-note">
         <p>
-          This work focuses on generating counterfactual changes that are minimal, meaningful, and consistent with relationships among attributes in tabular datasets.
+          A key gap in fairness testing for machine learning is the rigorous generation of natural test cases. My research focuses on generating realistic, distribution-consistent test cases for evaluating fairness in machine learning models.
         </p>
-        <a href="natural_changes.html">Project notes</a>
-      </article>
+        <p>
+          Much of my work studies how to test black-box models with inputs that remain meaningful in the data domain, rather than relying on synthetic perturbations that may violate feature relationships or produce invalid conclusions.
+        </p>
+      </div>
+      <div class="project-list">
+        <article class="project-card">
+          <h3>TabChange: Precise Attribute Changes in Tabular Data</h3>
+          <p>
+            Generate realistic counterfactuals for tabular data on sensitive attributes while preserving relationships among attributes. The counterfactual pair can be used for testing machine learning models for fairness, and satisfy counterfactual defination of individual fairness.
+          </p>
+          <div class="link-row">
+            <a href="natural_changes.html">Notes</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Fairness Testing of Machine Learning Models using Combinatorial Testing in Latent Space</h3>
+          <p>
+            Generate test instances in the latent space of a generative model using combinatorial testing to uncover discriminatory behavior in black-box machine learning systems. Leverage the relative independence of latent features and a decoder that knows the constraints of the dataset to obtain test cases with high naturalness in the input domain. Use combinatorial testing to efficiently search the latent space. This results in test cases for the causal definition of Individual Fairness Testing.
+          </p>
+          <p class="citation">
+            Dahal, Arjun, Sunny Shree, Yu Lei, Raghu N. Kacker, and D. Richard Kuhn. "Fairness Testing of Machine Learning Models using Combinatorial Testing in Latent Space." In 2025 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW), pp. 268-277. IEEE, 2025.
+          </p>
+          <div class="link-row">
+            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10962484" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a href="fairness_testing.html">Notes</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2> Undergraduate Publication</h2>
+      </div>
+      <div class="publication-list">
+        <article class="publication-card">
+          <h3>Nepali Speech Recognition using RNN-CTC Model</h3>
+          <p>
+            Paribesh Regmi, <strong>Arjun Dahal</strong>, and Basanta Joshi. International Journal of Computer Applications 178.31: 1-6, 2019.
+          </p>
+          <div class="link-row">
+            <a href="https://www.researchgate.net/publication/334523238_Nepali_Speech_Recognition_using_RNN-CTC_Model" target="_blank" rel="noopener noreferrer">Paper</a>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
   <script src="js/script.js?v=20260527-theme2"></script>

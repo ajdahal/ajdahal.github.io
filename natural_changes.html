@@ -7,14 +7,13 @@
   <script>
     document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
   </script>
-  <link rel="stylesheet" href="css/styles.css?v=20260527-theme2">
+  <link rel="stylesheet" href="css/styles.css?v=20260527-boxes1">
 </head>
 <body>
   <nav class="site-nav" aria-label="Primary navigation">
     <a href="index.html" class="nav-title">Arjun Dahal</a>
     <ul>
       <li><a href="research.html" aria-current="page">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
       <li><a href="blogs.html">Blogs</a></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
@@ -27,21 +26,19 @@
   <main class="content">
     <h1> Making Natural Changes in Tabular Data </h1>
 
-    <section>
+    <section class="note-box summary-box">
       <h2>Summary:</h2>
       <p>Modifying an attribute in tabular data often creates unnatural instances by breaking the relationship with
         other attributes. This is an important problem in applications like fairness testing, where the counterfactual
-        must be both natural and minimally changed from the original instance.<br>
-        In this work, we address the challenge of
-        generating such counterfactuals.<br>
-        Our approach analyzes the relationship between the attribute of interest and other attributes in the dataset. If
-        the relation is weak, it simply flips the attribute; if it is strong, it uses an adversarial framework to learn a
-        latent representation that removes information about the attribute. This removal enables precise modifications,
-        making only the necessary adjustments to maintain naturalness.</p>
+        must be both natural and minimally changed from the original instance. In this work, we address the challenge
+        of generating such counterfactuals. Our approach analyzes the relationship between the attribute of interest and
+        other attributes in the dataset. If the relation is weak, it simply flips the attribute; if it is strong,
+        it uses an adversarial framework to learn a latent representation that removes information about the attribute.
+        This removal enables precise modifications, making only the necessary adjustments to maintain naturalness.</p>
     </section>
     
 
-    <section>
+    <section class="note-box literature-box">
       <h2>Relevant Papers:</h2>
       <ol>
         <li>

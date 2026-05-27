@@ -8,14 +8,13 @@
   <script>
     document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
   </script>
-  <link rel="stylesheet" href="css/styles.css?v=20260527-theme2">
+  <link rel="stylesheet" href="css/styles.css?v=20260527-research1">
 </head>
 <body>
   <nav class="site-nav" aria-label="Primary navigation">
     <a href="index.html" class="nav-title">Arjun Dahal</a>
     <ul>
       <li><a href="research.html">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
       <li><a href="blogs.html">Blogs</a></li>
       <li><a href="cv.html">CV</a></li>
     </ul>
@@ -27,28 +26,22 @@
 
   <header class="hero">
     <div class="hero-copy">
-      <h1>About me</h1>
       <p class="hero-text">
         I am a PhD candidate in Computer Science and Engineering at the University of Texas at Arlington, where I conduct research under the supervision of <a href="https://www.uta.edu/academics/faculty/profile?username=ylei" target="_blank" rel="noopener noreferrer">Dr. Jeff Lei</a>.
       </p>
       <p class="hero-text">
-        My research broadly focuses on <strong>explainable AI</strong>, with an emphasis on <strong>fairness testing</strong>, <strong>bias mitigation</strong>, and <strong>synthetic data generation</strong>. My recent work has explored natural counterfactual data generation and methods for testing black-box machine learning systems.
+        My research broadly focuses on <strong>Explainable AI</strong>, with an emphasis on <strong>fairness testing</strong>, <strong>bias mitigation</strong>, and <strong>synthetic data generation</strong>. My recent work has explored natural counterfactual data generation and methods for testing black-box machine learning systems.
       </p>
       <p class="hero-text">
         I am interested in advancing the <strong>trustworthiness</strong> and <strong>responsible deployment</strong> of AI systems by making them more fair, reliable, and interpretable.
       </p>
-      <div class="hero-actions" aria-label="Profile links">
-        <a class="button primary" href="publications.html">View publications</a>
-        <a class="button" href="blogs.html">Read blogs</a>
-        <a class="button" href="files/resume_arjun.pdf">Download CV</a>
-      </div>
     </div>
     <div class="profile-card">
       <img src="img/profile.jpg" alt="Arjun Dahal">
       <div>
-        <h2>Arjun Dahal</h2>
+        <p> PhD candidate, </p>
         <p>University of Texas at Arlington</p>
-        <p class="muted">Synthetic Data Generation · Fairness Testing · XAI</p>
+        <p class="muted">Fairness Testing · Bias Mitigation · Synthetic Data Generation  · Explainable AI</p>
       </div>
     </div>
   </header>
@@ -56,100 +49,41 @@
   <main>
     <section class="section">
       <div class="section-heading">
-        <h2 class="section-title-large">Research</h2>
-        <p class="eyebrow">Current Projects</p>
-      </div>
-      <div class="card-grid">
-        <article class="card">
-          <p class="project-date">2026 - Ongoing</p>
-          <h3>Bias Mitigation in LLMs</h3>
-          <p>
-            Studying mechanistic interpretability methods for identifying and reducing biased behavior in large language models.
-          </p>
-        </article>
-        <article class="card">
-          <p class="project-date">2026 - Ongoing</p>
-          <h3>Bias Mitigation in Neural Networks</h3>
-          <p>
-            Diagnosing whether bias in a neural network is caused by shallow decision behavior or is embedded deeper in the learned representation, then exploring minimal interventions to reduce that bias.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Past Projects</p>
-      </div>
-      <div class="card-grid">
-        <article class="card">
-          <h3><a href="natural_changes.html">TabChange: Precise Attribute Changes in Tabular Data</a></h3>
-          <p>
-            Creating realistic counterfactuals for tabular data on sensitive attributes while preserving relationships among attributes.
-          </p>
-        </article>
-        <article class="card">
-          <h3><a href="fairness_testing.html">Fairness Testing of Machine Learning Models using Combinatorial Testing in Latent Space</a></h3>
-          <p>
-            Generating test instances in the latent space of generative models to uncover discriminatory behavior in black-box machine learning systems.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Profile</p>
         <h2>Education</h2>
       </div>
       <div class="resume-grid">
         <article class="resume-item">
           <h3>Ph.D. in Computer Science and Engineering</h3>
-          <p><strong>University of Texas at Arlington</strong> · August 2022 - Present</p>
+          <p><strong>University of Texas at Arlington</strong></p>
+          <p>August 2022 - Present</p>
           <p>GPA: 4.0 / 4.0</p>
           <p>Graduate Teaching Assistant for Intermediate Programming, Fundamentals of Software Engineering, Software Testing, and Professional Practices.</p>
           <p>Delivered lectures, supported course instruction, and helped students with programming, testing, and software engineering concepts.</p>
         </article>
         <article class="resume-item">
           <h3>B.E. in Electronics and Communication Engineering</h3>
-          <p>Pulchowk Campus, IOE, Nepal · Completed September 2018</p>
+          <p>Pulchowk Campus, IOE, Nepal </p>
+          <p> 2014 - 2018</p>
         </article>
       </div>
     </section>
 
     <section class="section">
       <div class="section-heading">
-        <p class="eyebrow">Experience</p>
         <h2>Professional Experience</h2>
       </div>
       <div class="resume-grid single-column">
         <article class="resume-item">
           <h3>Solutions Engineer</h3>
-          <p><strong>Logpoint</strong> · December 2018 - August 2022</p>
-          <p>Worked on security analytics and customer-facing technical solutions, combining troubleshooting, system integration, and product support for enterprise environments.</p>
+          <p><strong>GuardSix</strong> · December 2018 - August 2022</p>
+          <p>Worked on customer facing role for SIEM and SOAR solutions, combining troubleshooting, debugging, system integration, and deployment for enterprise environments.</p>
+          <p>Mentored new hires and delivered onboarding sessions on authorization, authentication, and IT compliance. </p>
         </article>
       </div>
     </section>
 
     <section class="section">
       <div class="section-heading">
-        <p class="eyebrow">Writing</p>
-        <h2>Blogs</h2>
-      </div>
-      <article class="publication-card">
-        <h3>Research notes and technical writing</h3>
-        <p>
-          I will use this space for short notes on fairness testing, synthetic data generation, explainable AI, software testing, and Ph.D. research practice.
-        </p>
-        <div class="link-row">
-          <a href="blogs.html">Open blog</a>
-        </div>
-      </article>
-    </section>
-
-    <section class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Updates</p>
         <h2>News</h2>
       </div>
       <div class="timeline">
@@ -171,7 +105,7 @@
         </div>
         <div class="timeline-item">
           <time>Dec 2018</time>
-          <p>Joined <a href="https://logpoint.com/en" target="_blank" rel="noopener noreferrer">Logpoint</a> as a Solutions Engineer.</p>
+          <p>Joined <a href="https://logpoint.com/en" target="_blank" rel="noopener noreferrer">GuardSix</a> as a Solutions Engineer.</p>
         </div>
         <div class="timeline-item">
           <time>Sep 2018</time>

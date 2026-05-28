@@ -17,7 +17,7 @@ html[data-theme="dark"] {
   --surface: #182321;
   --surface-soft: #22302d;
   --text: #eef4f1;
-  --muted: #aab8b3;
+  --muted: #c3cfcb;
   --accent: #5eead4;
   --accent-dark: #7ddfd3;
   --border: #2d403b;
@@ -34,7 +34,7 @@ body {
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 1.65;
+  line-height: 1.58;
 }
 
 a {
@@ -54,7 +54,7 @@ a:hover {
   gap: 24px;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 22px 28px;
+  padding: 18px 28px;
 }
 
 .nav-title {
@@ -143,11 +143,11 @@ main,
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 320px;
-  gap: 48px;
-  align-items: center;
-  padding-top: 48px;
-  padding-bottom: 44px;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 38px;
+  align-items: start;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .hero h1,
@@ -166,8 +166,9 @@ main,
 .hero-text,
 .page-intro p {
   max-width: 760px;
-  color: var(--muted);
+  color: var(--text);
   font-size: 1.08rem;
+  line-height: 1.58;
 }
 
 .hero-copy .hero-text:first-child {
@@ -214,8 +215,9 @@ main,
 
 .profile-card {
   display: grid;
-  gap: 18px;
-  padding: 18px;
+  gap: 0;
+  justify-self: end;
+  padding: 14px;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface);
@@ -243,8 +245,32 @@ main,
 
 .section,
 .page-intro {
-  padding-top: 38px;
-  padding-bottom: 28px;
+  padding-top: 26px;
+  padding-bottom: 18px;
+}
+
+.compact-intro h1 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.document-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.document-card h2 {
+  margin: 0 0 6px;
+}
+
+.document-card p {
+  margin: 0;
+  color: var(--text);
 }
 
 .profile-meta-grid {
@@ -272,16 +298,16 @@ main,
 .section-heading {
   display: grid;
   gap: 2px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .section-note {
   max-width: 820px;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
 }
 
 .section-note p {
-  color: var(--muted);
+  color: var(--text);
 }
 
 .section-title-large {
@@ -306,18 +332,18 @@ main,
 .card-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  gap: 16px;
 }
 
 .project-list {
   display: grid;
-  gap: 18px;
+  gap: 16px;
 }
 
 .card,
 .publication-card,
 .project-card {
-  padding: 22px;
+  padding: 20px;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface);
@@ -326,7 +352,7 @@ main,
 .card p,
 .publication-card p,
 .project-card p {
-  color: var(--muted);
+  color: var(--text);
 }
 
 .project-card h3 {
@@ -343,7 +369,7 @@ main,
 }
 
 .note-box {
-  padding: 24px;
+  padding: 20px;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--surface);
@@ -358,7 +384,7 @@ main,
 }
 
 .literature-box {
-  margin-top: 28px;
+  margin-top: 20px;
 }
 
 .literature-box ol {
@@ -367,7 +393,7 @@ main,
 
 .publication-list {
   display: grid;
-  gap: 18px;
+  gap: 16px;
 }
 
 .project-date {
@@ -381,7 +407,7 @@ main,
 .resume-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  gap: 16px;
 }
 
 .resume-grid.single-column {
@@ -389,9 +415,54 @@ main,
 }
 
 .resume-item {
-  padding: 20px;
+  padding: 18px;
   border-left: 3px solid var(--accent-dark);
   background: var(--surface);
+}
+
+.resume-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+
+.resume-item-header > div {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.resume-item-header h3 {
+  margin: 0 0 6px;
+}
+
+.resume-item-header p {
+  margin: 0;
+}
+
+.institution-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.institution-line span {
+  flex: 0 0 auto;
+  color: var(--accent-dark);
+  font-size: 0.86rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.resume-date {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: var(--accent-dark);
+  font-size: 0.86rem;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .resume-item h3,
@@ -438,7 +509,7 @@ main,
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
-  padding: 32px 0 56px;
+  padding: 24px 0 40px;
 }
 
 .contact-section a {
@@ -461,12 +532,12 @@ main,
 }
 
 .content {
-  padding-top: 28px;
-  padding-bottom: 56px;
+  padding-top: 18px;
+  padding-bottom: 40px;
 }
 
 .content section {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .content ol {
@@ -543,6 +614,7 @@ pre code {
 
   .profile-card {
     max-width: 360px;
+    justify-self: start;
   }
 
   .card-grid {
@@ -557,5 +629,24 @@ pre code {
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 4px;
+  }
+
+  .resume-item-header {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .institution-line {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .resume-date {
+    white-space: normal;
+  }
+
+  .institution-line span {
+    white-space: normal;
   }
 }

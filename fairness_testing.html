@@ -4,24 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fairness Testing</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+  </script>
+  <link rel="stylesheet" href="css/styles.css?v=20260528-newsbox3">
 </head>
 <body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="index.html" class="nav-title">Arjun Dahal</a>
+    <ul>
+      <li><a href="research.html" aria-current="page">Research</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="resume.html">Resume</a></li>
+    </ul>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+      <span class="theme-toggle-icon" aria-hidden="true">D</span>
+      <span class="theme-toggle-text">Dark</span>
+    </button>
+  </nav>
+
   <main class="content">
     <h1>Fairness Testing of Machine Learning Models using Combinatorial Testing </h1>
     
-    <section>
+    <section class="note-box summary-box">
       <h2>Summary:</h2>
-      <p>Decision-making by Machine Learning (ML) models can exhibit biased behavior, resulting in unfair outcomes.<br>
-        Testing ML models for such biases is essential to ensure unbiased decision-making.<br>
+      <p>Decision-making by Machine Learning (ML) models can exhibit biased behavior, resulting in unfair outcomes.
+        Testing ML models for such biases is essential to ensure unbiased decision-making.
         In this work, we propose a combinatorial testing-based approach in the latent space of a generative model to generate instances
-        that assess the fairness of black-box ML models.<br>
+        that assess the fairness of black-box ML models.
         Our approach involves a two-step process: generating t-way test cases in the latent space of a Variational AutoEncoder and
         performing fairness testing using the instances reconstructed from these test cases.</p>
     </section>
     
     
-    <section>
+    <section class="note-box literature-box">
       <h2>Relevant Papers:</h2>
       <ol>
         <li>
@@ -153,5 +169,24 @@
       </ol>
     </section>
   </main>
+  <footer class="site-footer contact-section" aria-label="Contact links">
+    <a href="mailto:axd5000@mavs.uta.edu" aria-label="Email">
+      <img src="img/email.svg" alt="">
+      <span>Email</span>
+    </a>
+    <a href="https://www.linkedin.com/in/arjdahal/" aria-label="LinkedIn">
+      <img src="img/linkedin.svg" alt="">
+      <span>LinkedIn</span>
+    </a>
+    <a href="https://github.com/ajdahal" aria-label="GitHub">
+      <img src="img/github.svg" alt="">
+      <span>GitHub</span>
+    </a>
+    <a href="https://scholar.google.com/citations?hl=en&user=fI9pyVIAAAAJ" aria-label="Google Scholar">
+      <img src="img/googlescholar.svg" alt="">
+      <span>Scholar</span>
+    </a>
+  </footer>
+  <script src="js/script.js?v=20260527-theme2"></script>
 </body>
 </html>

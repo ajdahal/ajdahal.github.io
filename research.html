@@ -3,26 +3,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta name="description" content="Research interests, projects, and publications by Arjun Dahal.">
+  <title>Research | Arjun Dahal</title>
+  <script>
+    document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+  </script>
+  <link rel="stylesheet" href="css/styles.css?v=20260528-newsbox3">
 </head>
 <body>
-  <nav>
+  <nav class="site-nav" aria-label="Primary navigation">
     <a href="index.html" class="nav-title">Arjun Dahal</a>
     <ul>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="cv.html">CV</a></li>
+      <li><a href="research.html" aria-current="page">Research</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="resume.html">Resume</a></li>
     </ul>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+      <span class="theme-toggle-icon" aria-hidden="true">D</span>
+      <span class="theme-toggle-text">Dark</span>
+    </button>
   </nav>
 
   <main class="content">
-    <h2>Research</h2>
-    <p>My research focuses on:</p>
-    <ol>
-      <li><a href="fairness_testing.html" class="plain-link">Fairness Testing</a></li>
-      <li><a href="natural_changes.html" class="plain-link">Natural Changes in Tabular Data</a></li>
-    </ol>
+    <section class="page-intro">
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2>Current Projects</h2>
+      </div>
+      <div class="section-note">
+        <p>
+          My current focus is on diagnosis - finding which components are resposible for the bias, followed by repair - how to best intervene on the model to reduce bias with minimal impact on performance.
+        </p>
+      </div>
+      <div class="project-list">
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Bias Mitigation in LLMs</h3>
+            <span class="project-date">2026 - Current</span>
+          </div>
+          <p>
+            Using mechanistic interpretability techniques for identifying and reducing biased behavior in large language models.
+          </p>
+        </article>
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Bias Mitigation in Neural Networks</h3>
+            <span class="project-date">2025 - Current</span>
+          </div>
+          <p>
+            Diagnosing whether bias in a neural network is spurious or embedded in the learned representation, then make minimal interventions to reduce the bias.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-heading">
+        <h2>Past Projects</h2>
+      </div>
+      <div class="section-note">
+        <p>
+          A key gap in fairness testing for machine learning is the generation of natural test cases.
+        <p>
+          My research focuses on generating natural test cases for evaluating the fairness in machine learning models.
+          Much of my work focuses on how to test black-box models with natural test cases that respect the relationship between features. The model is trained on the generated test cases to mitigate bias in the model.
+        </p>
+      </div>
+      <div class="project-list">
+        <article class="project-card">
+          <div class="project-header">
+            <h3>TabChange: Precise Attribute Changes in Tabular Data</h3>
+            <span class="project-date">2025 - 2026</span>
+          </div>
+          <p>
+            Generate realistic counterfactuals for tabular data on sensitive attributes while preserving relationships among attributes. The counterfactual pair can be used for testing machine learning models for counterfactual defination of individual fairness.
+          </p>
+          <div class="link-row">
+            <a href="natural_changes.html">Notes</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Fairness Testing of Machine Learning Models using Combinatorial Testing in Latent Space</h3>
+            <span class="project-date">2024 - 2025</span>
+          </div>
+          <p>
+            Generate test instances using combinatorial testing in the latent space of a VAE to uncover discriminatory behavior in black-box machine learning systems. Combinatorial testing is used for efficiently searching the latent space. Leverage the relative independence of latent features of VAE and a decoder that knows the constraints of the dataset to obtain test cases with high naturalness in the input domain. The black box model is tested for causal definition of Individual Fairness.
+          </p>
+          <p class="citation">
+            <strong>Dahal, Arjun</strong>, Sunny Shree, Yu Lei, Raghu N. Kacker, and D. Richard Kuhn. "Fairness Testing of Machine Learning Models using Combinatorial Testing in Latent Space." In 2025 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW), pp. 268-277. IEEE, 2025.
+          </p>
+          <div class="link-row">
+            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10962484" target="_blank" rel="noopener noreferrer">Paper</a>
+            <a href="fairness_testing.html">Notes</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <h2> Undergraduate Publication</h2>
+      </div>
+      <div class="publication-list">
+        <article class="publication-card undergrad-publication">
+          <div class="project-header">
+            <h3>Nepali Speech Recognition using RNN-CTC Model</h3>
+            <span class="project-date">2018 - 2019</span>
+          </div>
+          <p>
+            Applied a Recurrent Neural Network along with Connectionist Temporal Classification (CTC) loss for end-to-end Nepali language recognition.
+          </p>
+          <p class="citation">
+            Regmi, Paribesh, <strong>Arjun Dahal</strong>, and Basanta Joshi. "Nepali speech recognition using rnn-ctc model." International Journal of Computer Applications 178.31 (2019): 1-6.
+          </p>
+          <div class="link-row">
+            <a href="https://www.researchgate.net/publication/334523238_Nepali_Speech_Recognition_using_RNN-CTC_Model" target="_blank" rel="noopener noreferrer">Paper</a>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
+  <footer class="site-footer contact-section" aria-label="Contact links">
+    <a href="mailto:axd5000@mavs.uta.edu" aria-label="Email">
+      <img src="img/email.svg" alt="">
+      <span>Email</span>
+    </a>
+    <a href="https://www.linkedin.com/in/arjdahal/" aria-label="LinkedIn">
+      <img src="img/linkedin.svg" alt="">
+      <span>LinkedIn</span>
+    </a>
+    <a href="https://github.com/ajdahal" aria-label="GitHub">
+      <img src="img/github.svg" alt="">
+      <span>GitHub</span>
+    </a>
+    <a href="https://scholar.google.com/citations?hl=en&user=fI9pyVIAAAAJ" aria-label="Google Scholar">
+      <img src="img/googlescholar.svg" alt="">
+      <span>Scholar</span>
+    </a>
+  </footer>
+  <script src="js/script.js?v=20260527-theme2"></script>
 </body>
 </html>

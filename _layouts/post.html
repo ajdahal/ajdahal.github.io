@@ -8,7 +8,7 @@
   <script>
     document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
   </script>
-  <link rel="stylesheet" href="{{ '/css/styles.css?v=20260527-edu1' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/styles.css?v=20260528-newsbox3' | relative_url }}">
 </head>
 <body>
   <nav class="site-nav" aria-label="Primary navigation">
@@ -36,6 +36,24 @@
       {{ content }}
     </article>
   </main>
+  <footer class="site-footer contact-section" aria-label="Contact links">
+    <a href="mailto:axd5000@mavs.uta.edu" aria-label="Email">
+      <img src="{{ '/img/email.svg' | relative_url }}" alt="">
+      <span>Email</span>
+    </a>
+    <a href="https://www.linkedin.com/in/arjdahal/" aria-label="LinkedIn">
+      <img src="{{ '/img/linkedin.svg' | relative_url }}" alt="">
+      <span>LinkedIn</span>
+    </a>
+    <a href="https://github.com/ajdahal" aria-label="GitHub">
+      <img src="{{ '/img/github.svg' | relative_url }}" alt="">
+      <span>GitHub</span>
+    </a>
+    <a href="https://scholar.google.com/citations?hl=en&user=fI9pyVIAAAAJ" aria-label="Google Scholar">
+      <img src="{{ '/img/googlescholar.svg' | relative_url }}" alt="">
+      <span>Scholar</span>
+    </a>
+  </footer>
   <script src="{{ '/js/script.js?v=20260527-theme2' | relative_url }}"></script>
 </body>
 </html>

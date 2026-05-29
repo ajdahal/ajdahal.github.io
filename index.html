@@ -8,7 +8,7 @@
   <script>
     document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
   </script>
-  <link rel="stylesheet" href="css/styles.css?v=20260527-edu1">
+  <link rel="stylesheet" href="css/styles.css?v=20260528-newsbox3">
 </head>
 <body>
   <nav class="site-nav" aria-label="Primary navigation">
@@ -25,75 +25,25 @@
   </nav>
 
   <header class="hero">
+    <div class="profile-card">
+      <img src="img/profile.jpg" alt="Arjun Dahal">
+    </div>
     <div class="hero-copy">
       <p class="hero-text">
-        I am a PhD candidate in Computer Science and Engineering at the University of Texas at Arlington, where I conduct research under the supervision of <a href="https://www.uta.edu/academics/faculty/profile?username=ylei" target="_blank" rel="noopener noreferrer">Dr. Jeff Lei</a>.
+        I am PhD candidate in Computer Science and Engineering department at the University of Texas at Arlington, where I conduct research under the supervision of <a href="https://www.uta.edu/academics/faculty/profile?username=ylei" target="_blank" rel="noopener noreferrer">Dr. Jeff Lei</a>.
+        Before joining my PhD, I completed my B.E. in Electronics and Communication Engineering at Pulchowk Campus, IOE, Nepal and worked as a Solutions Engineer at GuardSix.
+
       </p>
       <p class="hero-text">
-        My research broadly focuses on <strong>Explainable AI</strong>, with an emphasis on <strong>fairness testing</strong>, <strong>bias mitigation</strong>, and <strong>synthetic data generation</strong>. My recent work has explored natural counterfactual data generation and methods for testing black-box machine learning systems.
+        My research broadly focuses on <strong>Explainable AI</strong>, with an emphasis on <strong>fairness testing</strong>, <strong>bias mitigation</strong>, and <strong>synthetic data generation</strong>. My work has explored generation of natural test cases for fairness testing for different definations of individual fairness testing of black-box machine models.
       </p>
       <p class="hero-text">
         I am interested in advancing the <strong>trustworthiness</strong> and <strong>responsible deployment</strong> of AI systems by making them more fair, reliable, and interpretable.
       </p>
     </div>
-    <div class="profile-card">
-      <img src="img/profile.jpg" alt="Arjun Dahal">
-    </div>
   </header>
 
-  <main>
-    <section class="section">
-      <div class="section-heading">
-        <h2>Education</h2>
-      </div>
-      <div class="resume-grid single-column">
-        <article class="resume-item">
-          <div class="resume-item-header">
-            <div>
-              <h3>Ph.D. in Computer Science and Engineering</h3>
-              <p class="institution-line">
-                <strong>University of Texas at Arlington, Arlington, TX</strong>
-                <span>GPA: 4.0</span>
-              </p>
-            </div>
-            <span class="resume-date">August 2022 - Present</span>
-          </div>
-          <p>Studied Machine Learning, Computer Vision, Design and Analysis of Algorithms, and Compilers.</p>
-          <p>Graduate Teaching Assistant for Intermediate Programming, Fundamentals of Software Engineering, Software Testing, and Professional Practices.
-            Delivered lectures, supported course instruction, and helped students with programming, testing, and software engineering concepts.</p>
-        </article>
-        <article class="resume-item">
-          <div class="resume-item-header">
-            <div>
-              <h3>B.E. in Electronics and Communication Engineering</h3>
-              <p><strong>Pulchowk Campus, IOE, Nepal</strong></p>
-            </div>
-            <span class="resume-date">2014 - 2018</span>
-          </div>
-          <p>Studied Artificial Intelligence, Mathematics, Programming, Computer Networks, Signal Analysis, Databases, Data Mining, along with many other courses.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-heading">
-        <h2>Professional Experience</h2>
-      </div>
-      <div class="resume-grid single-column">
-        <article class="resume-item">
-          <div class="resume-item-header">
-            <div>
-              <h3>Solutions Engineer</h3>
-              <p><strong>GuardSix</strong></p>
-            </div>
-            <span class="resume-date">December 2018 - August 2022</span>
-          </div>
-          <p>Worked on customer facing role for SIEM and SOAR solutions, combining troubleshooting, debugging, system integration, and deployment for enterprise environments.</p>
-          <p>Mentored new hires and delivered onboarding sessions on authorization, authentication, and IT compliance. </p>
-        </article>
-      </div>
-    </section>
-
+  <main class="home-main">
     <section class="section">
       <div class="section-heading">
         <h2>News</h2>
@@ -126,25 +76,25 @@
       </div>
     </section>
 
-    <section class="contact-section" aria-label="Contact links">
-      <a href="mailto:axd5000@mavs.uta.edu" aria-label="Email">
-        <img src="img/email.svg" alt="">
-        <span>Email</span>
-      </a>
-      <a href="https://www.linkedin.com/in/arjdahal/" aria-label="LinkedIn">
-        <img src="img/linkedin.svg" alt="">
-        <span>LinkedIn</span>
-      </a>
-      <a href="https://github.com/ajdahal" aria-label="GitHub">
-        <img src="img/github.svg" alt="">
-        <span>GitHub</span>
-      </a>
-      <a href="https://scholar.google.com/citations?hl=en&user=fI9pyVIAAAAJ" aria-label="Google Scholar">
-        <img src="img/googlescholar.svg" alt="">
-        <span>Scholar</span>
-      </a>
-    </section>
   </main>
+  <footer class="site-footer contact-section" aria-label="Contact links">
+    <a href="mailto:axd5000@mavs.uta.edu" aria-label="Email">
+      <img src="img/email.svg" alt="">
+      <span>Email</span>
+    </a>
+    <a href="https://www.linkedin.com/in/arjdahal/" aria-label="LinkedIn">
+      <img src="img/linkedin.svg" alt="">
+      <span>LinkedIn</span>
+    </a>
+    <a href="https://github.com/ajdahal" aria-label="GitHub">
+      <img src="img/github.svg" alt="">
+      <span>GitHub</span>
+    </a>
+    <a href="https://scholar.google.com/citations?hl=en&user=fI9pyVIAAAAJ" aria-label="Google Scholar">
+      <img src="img/googlescholar.svg" alt="">
+      <span>Scholar</span>
+    </a>
+  </footer>
   <script src="js/script.js?v=20260527-theme2"></script>
 </body>
 </html>
